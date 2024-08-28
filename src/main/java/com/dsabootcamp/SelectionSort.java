@@ -1,20 +1,17 @@
 package com.dsabootcamp;
 
+import java.util.Arrays;
+
 public class SelectionSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int [] arr = {1, 3 , 44, 23 , 9 , 18 , -32};
-		
-		int [] sorted = selectionSort(arr);
-		
-		for(int i=0;i < sorted.length;i++)
-			System.out.print(sorted[i] + ", ");
-
+		int [] arr = {1, 9 , 18 , 3 , 10};
+		System.out.print(selectionSort(arr));
 	}
 	
-	static int [] selectionSort(int [] arr) {
+	static String selectionSort(int [] arr) {
 
 		for (int i = 0; i < arr.length; i++) {
 			
@@ -27,13 +24,13 @@ public class SelectionSort {
 			// swap last element with maximum index element
 			swap(arr, maxI, lastI);
 		}
-		return arr;
+		return Arrays.toString(arr);
 	}
 	
 	static int getMaxIndex(int[] arr, int start, int end) {
 		int maxI = start;
 		
-		for (int i = start; i <= end; i++) {
+		for (int i = start + 1; i <= end; i++) {
 			if(arr[maxI] < arr[i]) {
 				maxI = i;
 			}

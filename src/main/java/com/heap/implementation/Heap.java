@@ -1,32 +1,42 @@
 package com.heap.implementation;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
-public class Heap {
-    public static void main(String[] args) {
-        int MAX = 20;
-        int [] arr = new int [MAX];
-        arr[1] = 50;
-        arr[2] = 30;
-        arr[3] = 20;
-        arr[4] = 15;
-        arr[5] = 10;
-        arr[6] = 8;
-        arr[7] = 16;
+public class Heap<T extends Comparable<T>> {
+    private ArrayList<T> list;
+    public Heap(){
+        list = new ArrayList<>();
+    }
+     public void insert(T value){
+        list.add(value);
+        upheap(list.size()-1);
+    }
 
-        System.out.println(Arrays.toString(arr));
-//        insert(arr, 7,60);
-//        System.out.println("After insert");
-//        System.out.println(Arrays.toString(arr));
-//        insert(arr, 8,65);
-//        System.out.println(Arrays.toString(arr));
-        delete(arr, 7);
-        System.out.println(Arrays.toString(arr));
+    private void upheap(int index){
+        if(index == 0)
+            return;
+        int p = parent(index);
+        if(list.get(index).compareTo(list.get(p)) < 0){
+            swap(index, p);
+            upheap(p);
+        }
+    }
+
+    private int parent(int index){
+        return (index - 1) / 2;
+    }
+
+    private void swap(int first, int second){
+        T temp = list.get(first);
+        list.set(first, list.get(second));
+        list.set(second,temp);
     }
 
 
 
-    static void delete(int [] A, int n){
+    public T remove() throws Exception{
         /*               50
                        /    \
                      30      20
@@ -37,45 +47,40 @@ public class Heap {
                 1    2   3   4   5  6   7
         Only root can be deleted
      */
-        // Replace the last element with the first element
-        A[1] = A[n];
-        A[n] = 0;
-        // move the last pointer backward to maintain the heap size
-        n = n - 1;
+        if(list.isEmpty()){
+            throw new Exception("Removing from empty list");
+        }
+        T temp = list.get(0);
+        T last = list.remove(list.size() - 1);
+        if(!list.isEmpty()){
+            list.set(0,last);
+            downheap(0);
+        }
+        return temp;
+    }
 
-        int i = 1;
-        while(i < n){
-            int left = A[2 * i];
-            int right = A[2 * i + 1];
+    private void downheap(int index){
+        int min = index;
+        int left = left(index);
+        int right = right(index);
 
-            int larger = left > right ? 2 * i : 2 * i + 1;
-            if(A[i] < A[larger]){
-                swap(A, i, larger);
-                i = larger;
-            }   else   {
-                return;
-            }
+        if(left < list.size() && list.get(min).compareTo(list.get(left)) > 0){
+            min = left;
+        }
+        if( right < list.size() && list.get(min).compareTo(list.get(right)) > 0){
+            min = right;
+        }
+
+        if(min != index){
+            swap(min, index);
+            downheap(min);
         }
     }
 
-    static void insert(int [] A, int n, int value){
-        n = n + 1;
-        A[n] = value;
-        int i = n;
-
-        while(i > 1){
-            int parent = i/2;
-            if(A[parent]  < A[i]){
-                swap(A, parent, i);
-                i = parent;
-            }
-            else{ return; }
-        }
+    private int left(int index){
+        return 2 * index + 1;
     }
-
-    static void swap(int [] A, int x, int y){
-        int temp = A[y];
-        A[y] = A[x];
-        A[x] = temp;
+    private int right(int index){
+        return 2 * index + 2;
     }
 }
