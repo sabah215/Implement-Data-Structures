@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="948889ec-edc9-4299-aa59-abca12ea4849" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticeDSA/com/dsabootcamp/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticeDSA/com/dsabootcamp/SelectionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticeDSA/com/heap/implementation/Heap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticeDSA/com/heap/implementation/Heap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticeDSA/com/leetcode/GameOfTwoStacks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticeDSA/com/leetcode/GameOfTwoStacks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsabootcamp/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dsabootcamp/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heap/implementation/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heap/implementation/Heap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PracticeDSA/com/leetcode/RemoveDuplicatesFromSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticeDSA/com/leetcode/RemoveDuplicatesFromSortedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/RemoveDuplicatesFromSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/RemoveDuplicatesFromSortedArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +44,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.StringMatching1408">
-    <configuration name="AddBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dsabootcamp.AddBinary" />
+  <component name="RunManager" selected="Application.Subsequence">
+    <configuration name="BuyAndSellStockII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.BuyAndSellStockII" />
       <module name="PracticeDSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dsabootcamp.*" />
+          <option name="PATTERN" value="com.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -61,12 +58,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CodingTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.codingtest.CodingTest" />
+    <configuration name="MajorityElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.MajorityElement" />
       <module name="PracticeDSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.codingtest.*" />
+          <option name="PATTERN" value="com.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Prime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dsabootcamp.Prime" />
+    <configuration name="RemoveDuplicatesFromSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.RemoveDuplicatesFromSortedArray" />
       <module name="PracticeDSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dsabootcamp.*" />
+          <option name="PATTERN" value="com.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dsabootcamp.SelectionSort" />
+    <configuration name="RemoveDuplicatesFromSortedArrayII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.RemoveDuplicatesFromSortedArrayII" />
       <module name="PracticeDSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dsabootcamp.*" />
+          <option name="PATTERN" value="com.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringMatching1408" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.StringMatching1408" />
+    <configuration name="Subsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Subsequence" />
       <module name="PracticeDSA" />
       <extension name="coverage">
         <pattern>
@@ -115,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StringMatching1408" />
-        <item itemvalue="Application.SelectionSort" />
-        <item itemvalue="Application.Prime" />
-        <item itemvalue="Application.CodingTest" />
-        <item itemvalue="Application.AddBinary" />
+        <item itemvalue="Application.Subsequence" />
+        <item itemvalue="Application.BuyAndSellStockII" />
+        <item itemvalue="Application.MajorityElement" />
+        <item itemvalue="Application.RemoveDuplicatesFromSortedArrayII" />
+        <item itemvalue="Application.RemoveDuplicatesFromSortedArray" />
       </list>
     </recent_temporary>
   </component>
